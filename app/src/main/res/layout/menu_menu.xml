@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:context=".Modulo2.Admin_Menu.Menu_menu"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/menu_menu"
+    >
+    <include
+        android:id="@+id/toolbarhistorialmenu"
+
+        layout="@layout/toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        android:layout_marginTop="55dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_marginTop="10dp"
+            android:background="@color/black"
+
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/titulomenulabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:gravity="center"
+                android:text="Detalle menu"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/white"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/menu_menu_buscartxt"
+                android:layout_width="200dp"
+                android:layout_height="45dp"
+                android:layout_below="@+id/titulomenulabel"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/white"
+                android:ems="20"
+                android:importantForAutofill="no"
+                android:inputType="date"
+                tools:ignore="LabelFor" />
+
+            <ImageButton
+
+                android:id="@+id/menu_menu_selecfecha"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+
+
+                android:layout_alignTop="@+id/menu_menu_buscartxt"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="-2dp"
+                android:layout_marginEnd="40dp"
+                android:src="@drawable/ic_baseline_calendar_today_24" />
+
+            <TextView
+                android:id="@+id/menulabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/menu_menu_buscartxt"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="Platillos"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/reg_menurecyclerViewmenu_Platillos"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_below="@+id/menulabel"
+                android:layout_alignParentEnd="true"
+
+
+                />
+
+            <TextView
+                android:id="@+id/entradaslabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/reg_menurecyclerViewmenu_Platillos"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="Entradas"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/reg_menurecyclerViewEntradas"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_below="@+id/entradaslabel"
+                android:layout_marginTop="10dp"
+
+                />
+
+            <TextView
+                android:id="@+id/bebidaslabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/reg_menurecyclerViewEntradas"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="bebidas"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/reg_menurecyclerViewBebidas"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_below="@+id/bebidaslabel"
+                android:layout_marginTop="10dp"
+
+                />
+        </RelativeLayout>
+
+
+
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/menu_menu_buscarunobtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="28dp"
+        android:background="@color/teal_200"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_find"
+        tools:ignore="SpeakableTextPresentCheck" />
+</androidx.constraintlayout.widget.ConstraintLayout>

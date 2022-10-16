@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:context=".Modulo1.Bienvenidos"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/top"
+
+    >
+
+    <include
+        android:id="@+id/menu_principal_toolbar"
+
+        layout="@layout/toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+<RelativeLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@color/black"
+    android:layout_marginTop="55dp"
+    >
+
+
+    <TextView
+        android:id="@+id/menutxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="Menu del día: "
+        android:textColor="@color/white"
+        android:textSize="35sp" />
+
+
+    <TextView
+        android:id="@+id/usetext"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/menutxt"
+
+        android:layout_alignParentStart="true"
+
+
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="10dp"
+        android:text="Usuario: "
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/mesalabel"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:layout_alignBottom="@+id/mesatxt"
+
+        android:layout_marginStart="-58dp"
+        android:layout_marginEnd="2dp"
+
+        android:layout_marginBottom="0dp"
+        android:layout_toStartOf="@+id/mesatxt"
+        android:text="Mesa: "
+        android:textColor="@color/white" />
+
+    <Spinner
+        android:id="@+id/mesatxt"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="82dp"
+        android:layout_marginEnd="10dp"
+        android:background="@color/white"
+        android:entries="@array/mesas"
+
+        android:textColor="@color/white" />
+
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        android:layout_marginTop="1dp"
+        android:layout_below="@+id/usetext"
+        android:layout_marginBottom="100dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_marginTop="10dp"
+            android:background="@color/black"
+
+            android:orientation="vertical"
+
+            >
+
+            <TextView
+                android:id="@+id/menulabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="Platillos"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/reg_menurecyclerViewmenudiaPlatillos"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_below="@+id/menulabel"
+                android:layout_alignParentEnd="true"
+
+
+                />
+
+            <TextView
+                android:id="@+id/entradaslabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/reg_menurecyclerViewmenudiaPlatillos"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="Entradas"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/reg_menurecyclerViewEntradas"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_below="@+id/entradaslabel"
+                android:layout_marginTop="10dp"
+
+                />
+
+            <TextView
+                android:id="@+id/bebidaslabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/reg_menurecyclerViewEntradas"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="bebidas"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/reg_menurecyclerViewBebidas"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_below="@+id/bebidaslabel"
+                android:layout_marginTop="10dp"
+
+                />
+
+
+        </RelativeLayout>
+
+
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/cartabtn"
+        android:layout_width="85dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="35dp"
+        android:backgroundTint="@color/purple_700"
+        android:text="Carta"
+        android:textColor="@color/white"
+
+        />
+
+
+
+    <Button
+        android:id="@+id/wspbtn2"
+        android:layout_width="104dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="35dp"
+        android:backgroundTint="@color/purple_700"
+        android:text="Pedido "
+        android:textColor="@color/white"
+        />
+
+</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

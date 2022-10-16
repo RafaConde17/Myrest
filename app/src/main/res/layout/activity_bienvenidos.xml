@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:context=".Modulo1.Bienvenidos"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    >
+
+    <include
+        android:id="@+id/bienvenidos1_toolbar"
+
+        layout="@layout/toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:background="@color/purple_200"
+
+        >
+
+
+        <TextView
+            android:id="@+id/singin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="40dp"
+            android:gravity="center"
+            android:text="Bienvenidos"
+            android:textColor="@color/white"
+            android:textSize="35sp"
+
+            android:textStyle="bold" />
+
+        <Button
+
+            android:id="@+id/Ingresomenubtn"
+            android:layout_width="265dp"
+            android:layout_height="119dp"
+            android:layout_below="@id/singin"
+
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="20dp"
+
+
+            android:layout_marginEnd="20dp"
+            android:backgroundTint="@color/purple_500"
+            android:text="Ingresar al menú" />
+
+        <Button
+
+            android:id="@+id/loginbtn"
+            android:layout_width="265dp"
+            android:layout_height="119dp"
+            android:layout_below="@id/Ingresomenubtn"
+
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="@color/purple_500"
+
+
+            android:text="Iniciar sesión" />
+
+        <Button
+
+            android:id="@+id/deliverybtn"
+            android:layout_width="265dp"
+            android:layout_height="119dp"
+            android:layout_below="@id/loginbtn"
+
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="@color/purple_500"
+
+
+            android:text="Realizar Reserva/Delivery" />
+
+        <TextView
+
+            android:id="@+id/contactText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/deliverybtn"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+
+            android:text="Contactenos"
+            android:textColor="@color/black" />
+
+        <Button
+
+            android:id="@+id/wspbtn"
+            android:layout_width="57dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/contactText"
+
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="@color/purple_500"
+
+
+            android:text="me"
+
+            android:layout_marginBottom="50dp"/>
+
+
+    </RelativeLayout>
+</ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

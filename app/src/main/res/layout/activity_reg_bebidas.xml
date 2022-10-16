@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:context=".Modulo1.Bienvenidos"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <include
+        android:id="@+id/reg_platillo_toolbar"
+
+        layout="@layout/toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:background="@color/black"
+        android:layout_marginTop="55dp"
+
+        >
+
+        <EditText
+            android:id="@+id/reg_bebidas_bebida"
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="90dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+
+            android:background="#30ffffff"
+            android:drawablePadding="20dp"
+            android:gravity="center"
+            android:hint="Bebidas:"
+            android:importantForAutofill="no"
+            android:inputType=""
+            android:maxLines="1"
+            android:padding="20dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+
+        <Spinner
+
+
+            android:id="@+id/reg_bebidas_categoria"
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:layout_below="@id/reg_bebidas_bebida"
+
+            android:layout_marginStart="10dp"
+
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="#30ffffff"
+            android:entries="@array/bebidas"
+
+            android:gravity="center"
+            android:maxLines="1"
+
+
+            android:popupBackground="@color/black"
+
+            android:spinnerMode="dropdown"
+            android:textColor="@color/white"
+            android:theme="@style/Spinner2"
+
+
+            />
+
+        <EditText
+
+            android:id="@+id/reg_bebidas_descripciontxt"
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:layout_below="@id/reg_bebidas_categoria"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="#30ffffff"
+            android:drawablePadding="20dp"
+            android:gravity="center"
+            android:hint="Descripción:"
+            android:importantForAutofill="no"
+            android:inputType=""
+            android:maxLines="1"
+            android:padding="20dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+
+            />
+
+
+        <EditText
+            android:id="@+id/reg_bebidas_Preciotxt"
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:layout_below="@id/reg_bebidas_descripciontxt"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="#30ffffff"
+            android:drawablePadding="20dp"
+            android:gravity="center"
+            android:hint="Precio:"
+            android:importantForAutofill="no"
+            android:inputType=""
+            android:maxLines="1"
+            android:padding="20dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+
+
+
+        <Button
+
+            android:id="@+id/reg_bebidas_ingresarbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/reg_bebidas_Preciotxt"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="@color/purple_700"
+            android:text="INGRESAR"
+            android:textColor="@color/white"/>
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

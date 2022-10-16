@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:context=".Modulo2.Admin_Menu.Menu_menu"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/menu_menu"
+    android:background="@color/black"
+    >
+    <include
+        android:id="@+id/toolbarhistorialcarta"
+        layout="@layout/toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        android:layout_marginTop="55dp"
+        android:layout_marginBottom="100dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="10dp"
+            android:background="@color/black"
+           android:layout_marginBottom="10dp"
+
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/titulocartalabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:gravity="center"
+                android:text="Detalle Carta"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/white"
+                android:textSize="25sp" />
+
+            <Spinner
+
+                android:id="@+id/reg_SpCarta"
+                android:layout_width="200dp"
+                android:layout_height="45dp"
+                android:layout_below="@id/titulocartalabel"
+
+
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="10dp"
+                android:background="#30ffffff"
+                android:entries="@array/carta"
+
+
+                android:gravity="center"
+
+                android:maxLines="1"
+                android:popupBackground="@color/black"
+                android:spinnerMode="dropdown"
+
+                android:textColor="@color/white"
+                android:theme="@style/Spinner2" />
+
+            <EditText
+                android:id="@+id/menu_carta_buscartxt"
+                android:layout_width="200dp"
+                android:layout_height="45dp"
+                android:layout_below="@+id/reg_SpCarta"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="10dp"
+                android:autofillHints="no"
+                android:background="@color/white"
+                android:inputType="text"
+                android:maxLines="1"
+                tools:ignore="LabelFor" />
+
+            <ImageButton
+
+                android:id="@+id/menu_carta_refresh"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+
+
+                android:layout_alignTop="@+id/reg_SpCarta"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="39dp"
+                android:src="@drawable/ic_baseline_refresh_24" />
+
+            <TextView
+                android:id="@+id/menulabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/menu_carta_buscartxt"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="Platillos"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/reg_menurecyclerViewcarta_Platillos"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_below="@+id/menulabel"
+                android:layout_alignParentEnd="true"
+
+
+                />
+
+            <TextView
+                android:id="@+id/entradaslabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/reg_menurecyclerViewcarta_Platillos"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="Entradas"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/reg_menurecyclerViewcarta_Entradas"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_below="@+id/entradaslabel"
+                android:layout_alignParentEnd="true"
+
+
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="0dp" />
+
+            <TextView
+                android:id="@+id/bebidaslabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/reg_menurecyclerViewcarta_Entradas"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="bebidas"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/reg_menurecyclerViewcarta_Bebidas"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_below="@+id/bebidaslabel"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp" />
+        </RelativeLayout>
+
+
+
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+
+        android:id="@+id/menu_carta_buscarunobtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="28dp"
+        android:background="@color/teal_200"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_find"
+        tools:ignore="SpeakableTextPresentCheck" />
+</androidx.constraintlayout.widget.ConstraintLayout>

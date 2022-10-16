@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:context=".Modulo1.Menu_usu"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/top"
+    >
+    <include
+        android:id="@+id/menu_reg_bebida_toolbar"
+        layout="@layout/toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        android:layout_marginTop="55dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="600dp">
+            <TextView
+                android:id="@+id/titulomenulabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Fecha asignada"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/white"
+                android:textSize="25sp" />
+            <EditText
+                android:id="@+id/menu_menu_fechatxt_select_bebida"
+                android:layout_width="200dp"
+                android:layout_height="45dp"
+                android:layout_below="@+id/titulomenulabel"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/white"
+                android:ems="20"
+                android:importantForAutofill="no"
+                android:inputType="date"
+                tools:ignore="LabelFor" />
+            <ImageButton
+                android:id="@+id/menu_menu_selecfecha_select_bebida"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignTop="@+id/menu_menu_fechatxt_select_bebida"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="-2dp"
+                android:layout_marginEnd="40dp"
+                android:src="@drawable/ic_baseline_calendar_today_24" />
+
+            <TextView
+                android:id="@+id/menulabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/menu_menu_fechatxt_select_bebida"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="Bebidas"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/reg_menurecyclerViewbebida_select_bebida"
+                android:layout_width="match_parent"
+                android:layout_height="378dp"
+                android:layout_below="@+id/menulabel" />
+
+            <Button
+                android:id="@+id/ingresarmenubtn_select_bebida"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/reg_menurecyclerViewbebida_select_bebida"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="126dp"
+                android:layout_marginBottom="20dp"
+                android:text="Ingresar"/>
+        </RelativeLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

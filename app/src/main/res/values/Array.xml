@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<string-array name="Opciones" >
+    <item >Administrador</item>
+    <item >Mesero</item>
+    <item >Cliente</item>
+
+</string-array>
+<string-array name="entradas">
+    <item >Sopas</item>
+    <item >Ensaladas</item>
+    <item >Piqueos</item>
+    <item >Guarnición</item>
+</string-array>
+
+<string-array name="carta">
+        <item >Platillo</item>
+        <item >Entrada</item>
+        <item >Bebida</item>
+
+</string-array>
+    <string-array name="Platillo_categoria">
+        <item >Platillo Marino</item>
+        <item >Platillo Chino</item>
+        <item >Platillo Criollo</item>
+        <item >Pastas</item>
+
+    </string-array>
+
+    <string-array name="Platillo_tipo">
+        <item >Menu</item>
+        <item >Carta</item>
+    </string-array>
+
+    <string-array name="bebidas">
+        <item >Gaseosa</item>
+        <item >Refresco</item>
+        <item >Infusiones</item>
+        <item >Trago</item>
+    </string-array>
+    <string-array name="mesas">
+        <item >#</item>
+        <item >1</item>
+        <item >2</item>
+        <item >3</item>
+        <item >4</item>
+        <item >5</item>
+    </string-array>
+</resources>

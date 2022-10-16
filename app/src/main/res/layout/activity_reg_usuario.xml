@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:context=".Modulo1.Bienvenidos"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <include
+        android:id="@+id/reg_usuario_toolbar"
+
+        layout="@layout/toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@color/purple_500"
+    android:layout_marginTop="55dp"
+
+    >
+
+    <EditText
+        android:id="@+id/reg_clientetxt"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="90dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+
+        android:background="#30ffffff"
+        android:drawablePadding="20dp"
+        android:gravity="center"
+        android:hint="Usuario/Número:"
+        android:importantForAutofill="no"
+        android:inputType=""
+        android:maxLines="1"
+        android:padding="20dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
+
+    <EditText
+        android:id="@+id/reg_passwordtxt"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:layout_below="@id/reg_clientetxt"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#30ffffff"
+        android:drawablePadding="20dp"
+        android:gravity="center"
+        android:hint="Password:"
+        android:importantForAutofill="no"
+        android:inputType=""
+        android:maxLines="1"
+        android:padding="20dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        tools:ignore="TextFields" />
+
+
+    <Spinner
+
+        android:id="@+id/reg_Sp1"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:layout_below="@id/reg_passwordtxt"
+
+        android:layout_marginStart="10dp"
+
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#30ffffff"
+        android:entries="@array/Opciones"
+
+        android:gravity="center"
+        android:maxLines="1"
+
+
+        android:popupBackground="@color/black"
+
+        android:spinnerMode="dropdown"
+        android:textColor="@color/white"
+        android:theme="@style/Spinner2"
+
+        />
+
+
+    <EditText
+        android:id="@+id/reg_Apellidonombretxt"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:layout_below="@id/reg_Sp1"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#30ffffff"
+        android:drawablePadding="20dp"
+        android:gravity="center"
+        android:hint="Apellidos y Nombres:"
+        android:importantForAutofill="no"
+        android:inputType=""
+        android:maxLines="1"
+        android:padding="20dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
+
+    <EditText
+        android:id="@+id/reg_correotxt"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:layout_below="@id/reg_Apellidonombretxt"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#30ffffff"
+        android:drawablePadding="20dp"
+        android:gravity="center"
+        android:hint="Correo:"
+        android:importantForAutofill="no"
+        android:inputType=""
+        android:maxLines="1"
+        android:padding="20dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
+
+    <Button
+
+        android:id="@+id/reg_ingresarbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/reg_correotxt"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/purple_700"
+        android:text="INGRESAR"
+        android:textColor="@color/white"/>
+
+</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

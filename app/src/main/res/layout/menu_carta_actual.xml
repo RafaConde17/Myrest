@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:context=".Modulo1.Menu_usu"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/top"
+    >
+    <include
+        android:id="@+id/menu_platillo_toolbar"
+
+        layout="@layout/toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        android:layout_marginTop="55dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_marginTop="10dp"
+            android:background="@color/black"
+
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/titulomenulabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:gravity="center"
+                android:text="Carta"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/white"
+                android:textSize="40sp" />
+
+            <TextView
+                android:id="@+id/menulabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/titulomenulabel"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="Platillos"
+                android:background="@color/white"
+                android:textColor="@color/black"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/menulabelplatillo1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/menulabel"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="Comida Marina"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/reg_menurecyclerViewPlatillos_marino"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_below="@+id/menulabelplatillo1"
+                android:layout_alignParentEnd="true" />
+            <TextView
+                android:id="@+id/menulabelplatillo2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/reg_menurecyclerViewPlatillos_marino"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="Comida China"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/reg_menurecyclerViewPlatillos_Chino"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_below="@+id/menulabelplatillo2"
+                android:layout_alignParentEnd="true" />
+            <TextView
+                android:id="@+id/menulabelplatillo3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/reg_menurecyclerViewPlatillos_Chino"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="Comida criolla"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/reg_menurecyclerViewPlatillos_criollo"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_below="@+id/menulabelplatillo3"
+                android:layout_alignParentEnd="true"
+                />
+            <TextView
+                android:id="@+id/menulabelplatillo4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/reg_menurecyclerViewPlatillos_criollo"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="Pastas"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/reg_menurecyclerViewPlatillos_pastas"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_below="@+id/menulabelplatillo4"
+                android:layout_alignParentEnd="true"
+                />
+
+            <TextView
+                android:id="@+id/entradaslabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/reg_menurecyclerViewPlatillos_pastas"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:text="Entradas"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+
+                android:textSize="30sp" />
+
+
+            <TextView
+                android:id="@+id/menulabelentrada1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/entradaslabel"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="Sopas"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/reg_menurecyclerViewEntradas_Sopas"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_below="@+id/menulabelentrada1"
+                android:layout_alignParentEnd="true" />
+            <TextView
+                android:id="@+id/menulabelentrada2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/reg_menurecyclerViewEntradas_Sopas"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="Ensaladas"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/reg_menurecyclerViewEntrada_ensaladas"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_below="@+id/menulabelentrada2"
+                android:layout_alignParentEnd="true" />
+            <TextView
+                android:id="@+id/menulabelentrada3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/reg_menurecyclerViewEntrada_ensaladas"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="Piqueos"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/reg_menurecyclerViewEntrada_piqueos"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_below="@+id/menulabelentrada3"
+                android:layout_alignParentEnd="true"
+                />
+
+            <TextView
+                android:id="@+id/menulabelentrada4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/reg_menurecyclerViewEntrada_piqueos"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="Guarnición"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/reg_menurecyclerViewEntrada_Guarnicion"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_below="@+id/menulabelentrada4"
+                android:layout_alignParentEnd="true"
+                />
+            <TextView
+                android:id="@+id/bebidaslabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/reg_menurecyclerViewEntrada_Guarnicion"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="Bebidas"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:background="@color/white"
+                android:textColor="@color/black"
+                android:textSize="30sp" />
+            <TextView
+                android:id="@+id/menulabelbebida1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bebidaslabel"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="Gaseosa"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/reg_menurecyclerViewBebida_gaseosa"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_below="@+id/menulabelbebida1"
+                android:layout_alignParentEnd="true" />
+            <TextView
+                android:id="@+id/menulabelbebida2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/reg_menurecyclerViewBebida_gaseosa"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="Refrescos"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/reg_menurecyclerViewBebida_refrescos"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_below="@+id/menulabelbebida2"
+                android:layout_alignParentEnd="true" />
+            <TextView
+                android:id="@+id/menulabelbebida3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/reg_menurecyclerViewBebida_refrescos"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="Infusiones"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/reg_menurecyclerViewBebida_infusiones"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_below="@+id/menulabelbebida3"
+                android:layout_alignParentEnd="true"
+                />
+
+            <TextView
+                android:id="@+id/menulabelbebida4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/reg_menurecyclerViewBebida_infusiones"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="Tragos"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/reg_menurecyclerViewBebida_tragos"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_below="@+id/menulabelbebida4"
+                android:layout_alignParentEnd="true"
+                />
+
+
+            <Button
+                android:id="@+id/ingresarmenubtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/reg_menurecyclerViewBebida_tragos"
+
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:text="Ingresar Menu"
+
+                />
+
+
+
+        </RelativeLayout>
+
+
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

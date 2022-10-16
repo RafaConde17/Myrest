@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.myrest">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyRest"
+        tools:targetApi="31">
+        <activity android:name=".Modulo1.Update_delete_usu"
+            android:exported="false">
+
+        </activity>
+        <activity
+            android:name=".Modulo2.Menu_Principal"
+            android:exported="false">
+
+              </activity>
+        <activity
+            android:name=".Modulo2.Admin_Carta.Menu_carta"
+            android:exported="false">
+
+        </activity>
+        <activity
+            android:name=".Modulo2.Admin_Carta.Reg_Carta_Platillo"
+            android:exported="false">
+
+        </activity>
+        <activity
+            android:name=".Modulo2.Admin_Carta.Reg_Carta_Bebida"
+            android:exported="false">
+
+        </activity>
+        <activity
+            android:name=".Modulo2.Admin_Carta.Menu_Carta_Principal"
+            android:exported="false">
+
+        </activity>
+        <activity
+            android:name=".Modulo2.Admin_Carta.Reg_Carta_Entrada"
+            android:exported="false">
+
+        </activity>
+        <activity
+            android:name=".Modulo1.Menu_usu"
+            android:exported="false">
+
+        </activity>
+        <activity
+            android:name=".Modulo2.Admin_Menu.Menu_menu"
+            android:exported="false">
+
+        </activity>
+        <activity
+            android:name=".Modulo2.Admin_Menu.Reg_menu"
+            android:exported="false">
+
+        </activity>
+        <activity
+            android:name=".Modulo2.Admin_Menu.AsignarPlatillo.Reg_Menu_platillo"
+            android:exported="false">
+
+        </activity>
+        <activity
+            android:name=".Modulo2.Admin_Menu.AsignarPlatillo.Menu_menu_platilloselect"
+            android:exported="false">
+
+        </activity>
+        <activity
+            android:name=".Modulo2.Admin_Menu.AsignarBebidas.Reg_Menu_bebida"
+            android:exported="false">
+
+        </activity>
+        <activity
+            android:name=".Modulo2.Admin_Menu.AsignarBebidas.Menu_menu_bebidaselect"
+            android:exported="false">
+
+        </activity>
+        <activity
+            android:name=".Modulo2.Admin_Menu.AsignarEntrada.Reg_Menu_entrada"
+            android:exported="false">
+
+        </activity>
+        <activity
+            android:name=".Modulo2.Admin_Menu.AsignarEntrada.Menu_menu_entradaselect"
+            android:exported="false">
+
+        </activity>
+
+
+
+
+
+
+        <activity
+            android:name=".Modulo1.Login"
+            android:exported="false">
+
+        </activity>
+        <activity
+            android:name=".Modulo2.AsignarPlatillo.Menu_platillo"
+            android:exported="false">
+
+        </activity>
+        <activity
+            android:name=".Modulo2.AsignarPlatillo.Reg_platillo"
+            android:exported="false">
+
+        </activity>
+        <activity
+            android:name=".Modulo2.AsignarPlatillo.Update_delete_platillo"
+            android:exported="false">
+        </activity>
+
+        <activity
+            android:name=".Modulo2.AsignarBebidas.Menu_bebidas"
+            android:exported="false">
+
+        </activity>
+        <activity
+            android:name=".Modulo2.AsignarBebidas.Reg_bebidas"
+            android:exported="false">
+
+        </activity>
+        <activity
+            android:name=".Modulo2.AsignarBebidas.Update_delete_bebidas"
+            android:exported="false">
+        </activity>
+
+
+        <activity
+            android:name=".Modulo2.AsignarEntradas.Menu_Entradas"
+            android:exported="false">
+
+        </activity>
+
+        <activity
+            android:name=".Modulo2.AsignarEntradas.Reg_Entradas"
+            android:exported="false">
+
+        </activity>
+
+        <activity
+            android:name=".Modulo2.AsignarEntradas.Update_delete_entradas"
+            android:exported="false">
+
+
+        </activity>
+        <activity
+            android:name=".Modulo1.Reg_usuario"
+            android:exported="false">
+
+        </activity>
+        <activity
+            android:name=".Modulo1.Bienvenidos"
+            android:exported="true"
+
+            >
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

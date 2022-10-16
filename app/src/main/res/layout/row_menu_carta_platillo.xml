@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/row_menu_carta_platillos_mainLayout"
+    >
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/row_menu_carta_platillo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:text="Platillo"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.052" />
+
+            <TextView
+                android:id="@+id/row_menu_carta_categoria"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Categoria"
+                android:textColor="#000"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/row_menu_carta_platillo"
+                app:layout_constraintTop_toBottomOf="@+id/row_menu_carta_platillo" />
+
+            <TextView
+                android:id="@+id/row_menu_carta_descripcion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="descripcion"
+                android:textColor="#000"
+                android:textSize="10sp"
+                app:layout_constraintStart_toStartOf="@+id/row_menu_carta_categoria"
+                app:layout_constraintTop_toBottomOf="@+id/row_menu_carta_categoria" />
+
+            <TextView
+                android:id="@+id/row_menu_carta_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="id"
+                android:textSize="6sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/row_menu_carta_platillo"
+                tools:ignore="SmallSp" />
+
+            <TextView
+                android:id="@+id/row_platillo_preciosimbolo"
+                android:layout_width="7dp"
+                android:layout_height="11dp"
+                android:text="S/:"
+                android:textSize="8sp"
+                app:layout_constraintEnd_toStartOf="@+id/row_menu_carta_precio"
+                app:layout_constraintTop_toTopOf="@+id/row_menu_carta_precio" />
+
+            <TextView
+                android:id="@+id/row_menu_carta_precio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:text="Precio"
+                android:textColor="#000"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="@+id/row_menu_carta_descripcion"
+                app:layout_constraintEnd_toEndOf="@+id/row_menu_carta_id"
+                app:layout_constraintTop_toBottomOf="@+id/row_menu_carta_id" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

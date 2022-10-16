@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Modulo1.Update_delete_usu"
+    >
+
+    <include
+        android:id="@+id/update_delete_usuario_toolbar"
+        layout="@layout/toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:background="@color/black"
+        android:layout_marginTop="55dp"
+
+        >
+
+        <EditText
+            android:id="@+id/update_delete_usuario_clientetxt"
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="90dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+
+            android:background="#30ffffff"
+            android:drawablePadding="20dp"
+            android:gravity="center"
+            android:hint="Usuario/Número:"
+            android:importantForAutofill="no"
+            android:inputType=""
+            android:maxLines="1"
+            android:padding="20dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+
+        <EditText
+            android:id="@+id/update_delete_usuario_passwordtxt"
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:layout_below="@id/update_delete_usuario_clientetxt"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="#30ffffff"
+            android:drawablePadding="20dp"
+            android:gravity="center"
+            android:hint="Password:"
+            android:importantForAutofill="no"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:padding="20dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            tools:ignore="TextFields" />
+
+
+        <Spinner
+
+            android:id="@+id/update_delete_usuario_Sp1"
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:layout_below="@id/update_delete_usuario_passwordtxt"
+
+            android:layout_marginStart="10dp"
+
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="#30ffffff"
+            android:entries="@array/Opciones"
+
+            android:gravity="center"
+            android:maxLines="1"
+
+
+            android:popupBackground="@color/black"
+
+            android:spinnerMode="dropdown"
+            android:textColor="@color/white"
+            android:theme="@style/Spinner2"
+
+            />
+
+
+        <EditText
+            android:id="@+id/update_delete_usuario_Apellidonombretxt"
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:layout_below="@id/update_delete_usuario_Sp1"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="#30ffffff"
+            android:drawablePadding="20dp"
+            android:gravity="center"
+            android:hint="Apellidos y Nombres:"
+            android:importantForAutofill="no"
+            android:inputType=""
+            android:maxLines="1"
+            android:padding="20dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+
+        <EditText
+            android:id="@+id/update_delete_usuario_correotxt"
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:layout_below="@id/update_delete_usuario_Apellidonombretxt"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="#30ffffff"
+            android:drawablePadding="20dp"
+            android:gravity="center"
+            android:hint="Correo:"
+            android:importantForAutofill="no"
+            android:inputType=""
+            android:maxLines="1"
+            android:padding="20dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+
+        <Button
+
+            android:id="@+id/update_delete_usuario_updaterbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/update_delete_usuario_correotxt"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="@color/purple_700"
+            android:text="ACTUALIZAR"
+            android:textColor="@color/white"/>
+        <Button
+
+            android:id="@+id/update_delete_usuario_deletebtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/update_delete_usuario_updaterbtn"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="@color/purple_700"
+            android:text="ELIMINAR"
+            android:textColor="@color/white"/>
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
